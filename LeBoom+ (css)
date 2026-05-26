@@ -41,7 +41,8 @@ body {
 }
 
 .logo h1 span {
-    color: var(--primary);
+    color: var(--text-main);
+    text-shadow: 0 0 5px #ffffff, 0 0 15px #00e5ff, 0 0 25px #0099ff;
 }
 
 nav {
