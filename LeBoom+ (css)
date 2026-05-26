@@ -1,10 +1,11 @@
+/* Configurações Gerais e Cores */
 :root {
-    --bg-dark: #0a0e17;
-    --bg-card: #141b2b;
-    --primary: #00e5ff;
-    --primary-hover: #00b3cc;
-    --text-main: #ffffff;
-    --text-muted: #8fa0b5;
+    --PRETO: #0a0e17;
+    --CINZA: #141b2b;
+    --CIAN: #00e5ff;
+    --AZUL: #00b3cc;
+    --WHITE: #ffffff;
+    --CINZACLARO: #8fa0b5;
     --white: #ffffff;
 }
 
@@ -16,8 +17,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-dark);
-    color: var(--text-main);
+    background-color: var(--PRETO);
+    color: var(--WHITE);
     line-height: 1.6;
 }
 
@@ -39,7 +40,7 @@ body {
 }
 
 .logo h1 span {
-    color: var(--text-main);
+    color: var(--WHITE);
     text-shadow: 0 0 5px #ffffff, 0 0 15px #00e5ff, 0 0 25px #0099ff;
 }
 
@@ -50,26 +51,26 @@ nav {
 }
 
 nav a {
-    color: var(--text-muted);
+    color: var(--CINZACLARO);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: var(--white);
+    color: var(--WHITE);
 }
 
 .btn-nav {
-    background-color: var(--primary);
-    color: var(--bg-dark) !important;
+    background-color: var(--CIAN);
+    color: var(--PRETO) !important;
     padding: 8px 16px;
     border-radius: 6px;
     font-weight: 600;
 }
 
 .btn-nav:hover {
-    background-color: var(--primary-hover);
+    background-color: var(--AZUL);
 }
 
 section {
@@ -92,15 +93,15 @@ section {
 
 .hero p {
     font-size: 1.2rem;
-    color: var(--text-muted);
+    color: var(--CINZACLARO);
     max-width: 600px;
     margin: 0 auto 40px auto;
 }
 
 .btn-primary {
     display: inline-block;
-    background-color: var(--primary);
-    color: var(--bg-dark);
+    background-color: var(--CIAN);
+    color: var(--PRETO);
     padding: 14px 32px;
     border-radius: 8px;
     text-decoration: none;
@@ -109,7 +110,7 @@ section {
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-hover);
+    background-color: var(--AZUL);
     transform: translateY(-2px);
 }
 
@@ -126,7 +127,7 @@ section {
 }
 
 .feature-card {
-    background-color: var(--bg-card);
+    background-color: var(--CINZA);
     padding: 30px;
     border-radius: 12px;
     border: 1px solid #1e293b;
@@ -134,7 +135,7 @@ section {
 
 .feature-card h3 {
     margin-bottom: 12px;
-    color: var(--primary);
+    color: var(--CIAN);
 }
 
 .feature-card p {
@@ -142,6 +143,7 @@ section {
     font-size: 0.95rem;
 }
 
+/* Grid de Planos */
 .planos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -150,7 +152,7 @@ section {
 }
 
 .plano-card {
-    background-color: var(--bg-card);
+    background-color: var(--CINZA);
     padding: 40px 30px;
     border-radius: 16px;
     border: 1px solid #1e293b;
@@ -159,7 +161,7 @@ section {
 }
 
 .plano-card.destacado {
-    border-color: var(--primary);
+    border-color: var(--CIAN);
     transform: scale(1.05);
 }
 
@@ -168,8 +170,8 @@ section {
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--primary);
-    color: var(--bg-dark);
+    background-color: var(--CIAN);
+    color: var(--PRETO);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -190,7 +192,7 @@ section {
 
 .preco span {
     font-size: 1rem;
-    color: var(--text-muted);
+    color: var(--CINZACLARO);
     font-weight: 400;
 }
 
@@ -202,21 +204,21 @@ section {
 
 .plano-card ul li {
     margin-bottom: 12px;
-    color: var(--text-muted);
+    color: var(--CINZACLARO);
     font-size: 0.95rem;
 }
 
 .plano-card ul li::before {
     content: "✓ ";
-    color: var(--primary);
+    color: var(--CIAN);
     margin-right: 8px;
     font-weight: bold;
 }
 
 .btn-card {
     display: block;
-    border: 2px solid var(--primary);
-    color: var(--primary);
+    border: 2px solid var(--CIAN);
+    color: var(--CIAN);
     padding: 12px;
     border-radius: 8px;
     text-decoration: none;
@@ -225,13 +227,13 @@ section {
 }
 
 .btn-card:hover, .btn-card.principal {
-    background-color: var(--primary);
-    color: var(--bg-dark);
+    background-color: var(--CIAN);
+    color: var(--PRETO);
 }
 
 .btn-card.principal:hover {
-    background-color: var(--primary-hover);
-    border-color: var(--primary-hover);
+    background-color: var(--AZUL);
+    border-color: var(--AZUL);
 }
 
 /* Seção Contato */
@@ -240,18 +242,20 @@ section {
 }
 
 .contato p {
-    color: var(--text-muted);
+    color: var(--CINZACLARO);
     margin-bottom: 30px;
 }
 
+/* Rodapé */
 footer {
     text-align: center;
     padding: 40px;
     border-top: 1px solid #1e293b;
-    color: var(--text-muted);
+    color: var(--CINZACLARO);
     font-size: 0.9rem;
 }
 
+/* Responsividade Básica */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
