@@ -1,4 +1,3 @@
-/* Configurações Gerais e Cores */
 :root {
     --bg-dark: #0a0e17;
     --bg-card: #141b2b;
@@ -22,7 +21,6 @@ body {
     line-height: 1.6;
 }
 
-/* Cabeçalho e Navegação */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -74,14 +72,12 @@ nav a:hover {
     background-color: var(--primary-hover);
 }
 
-/* Seções Gerais */
 section {
     padding: 80px 8%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     padding: 120px 8%;
@@ -101,7 +97,6 @@ section {
     margin: 0 auto 40px auto;
 }
 
-/* Botões Globais */
 .btn-primary {
     display: inline-block;
     background-color: var(--primary);
@@ -118,7 +113,6 @@ section {
     transform: translateY(-2px);
 }
 
-/* Grid de Recursos (Sobre Nós) */
 .sobre h2, .planos h2, .contato h2 {
     text-align: center;
     font-size: 2.2rem;
@@ -148,7 +142,6 @@ section {
     font-size: 0.95rem;
 }
 
-/* Grid de Planos */
 .planos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -251,7 +244,6 @@ section {
     margin-bottom: 30px;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 40px;
@@ -260,7 +252,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsividade Básica */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
