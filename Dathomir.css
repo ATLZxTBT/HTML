@@ -1,0 +1,30 @@
+.divHEADER{
+    text-align: center;
+    padding: 25px;
+    background: linear-gradient(180deg, #264379, #34599e);
+    height: 150px;
+    margin: 5px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    border: 2px solid #4069b4;
+    border-radius: 18px;
+}h1{
+    font-size: 2rem;
+    margin-top: 1px;
+}
+
+.divCONTENT{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}.content{
+    flex: 1;
+    text-align: left;
+    background: linear-gradient(180deg, #FFFFFF, #eafffd);
+    color: #000000;
+    border: 2px solid #a9dee0;
+    border-radius: 18px;
+    padding: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
