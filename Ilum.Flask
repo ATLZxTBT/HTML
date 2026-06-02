@@ -18,7 +18,7 @@ def MainPage():
                    ("Yanaye","eos.official@gmail.com",26),
                    ("Rebbeca","becca.lenner@gmail.com",22)]
     PyMessage = f"Your email is {PyUsersList[0][1]}"
-    return render_template("ilum.html", UserName=PyUsersList[1], Message=PyMessage)
+    return render_template("ilum.html", UserList=PyUsersList, UserName=PyUsersList[0][0], Message=PyMessage)
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
