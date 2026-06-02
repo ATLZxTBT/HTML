@@ -1,11 +1,24 @@
-### Criar app.py /// Criar diretório: templates /// criar os próximos arquivos dentro do diretório
+### 1° -> Create file with flask in PythonProject
+### 2° -> Create 'templates' directory
+### 3° -> Create HTML file in new directory
 
+### Run Ilum.py to check on the HTML page until I figure out how to run the HTML file
 
 from flask import Flask, render_template
 
+
 app = Flask(__name__)
 @app.route("/")
-def pagina():
-    text_html = "essa mensagem é do python"
-    lista_exemplo = []
-    return render_template(("Ilum.html"))
+### Defines route to HTML file
+
+def MainPage():
+    PyUsersList = [("Atlas","genwylder@gmail.com",109),
+                   ("Hayden","h.harris@gmail.com",89),
+                   ("Arion","bh.arion@gmail.com",36),
+                   ("Yanaye","eos.official@gmail.com",26),
+                   ("Rebbeca","becca.lenner@gmail.com",22)]
+    PyMessage = f"Your email is {PyUsersList[0][1]}"
+    return render_template("ilum.html", UserName=PyUsersList[1], Message=PyMessage)
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=5000)
